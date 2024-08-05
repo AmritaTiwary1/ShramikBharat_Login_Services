@@ -16,7 +16,7 @@ const headerHTML = `  <header class="section-navbar">
               </div>
             </li>
             <li class="nav-link">
-              <a href="#blogs" class="nav-link">blogs</a>
+              <a href="/" class="nav-link">blogs</a>
             </li>
             <li class="nav-link">
               <a href="contact.html" class="nav-link">contact us</a>

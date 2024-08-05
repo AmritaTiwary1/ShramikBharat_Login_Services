@@ -1,4 +1,4 @@
-const headerHTML = ` <header class="section-navbar">
+const headerHTML = `  <header class="section-navbar">
       <div class="head container">
         <div class="web-brand">
          
@@ -10,13 +10,13 @@ const headerHTML = ` <header class="section-navbar">
             <li class="nav-link"><a href="/" class="nav-link">home</a></li>
             <li class="nav-link" id="services">
               <div class="menu">
-                <a href="" class="nav-link"
+                <a href="service.html" class="nav-link"
                   >services <i class="fa-solid"></i
                 ></a>
               </div>
             </li>
             <li class="nav-link">
-              <a href="/" class="nav-link">blogs</a>
+              <a href="#blogs" class="nav-link">blogs</a>
             </li>
             <li class="nav-link">
               <a href="contact.html" class="nav-link">contact us</a>

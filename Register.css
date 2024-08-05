@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    list-style: none;
+}
+
+:root{
+    --hide: -10000px; 
+    --show: 0px; 
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.23rem; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column;
+    row-gap: 10px;  
+}
+
+header {
+    width: 100%; 
+    height: 70px; 
+    border: 2px solid red; 
+    display: flex;
+    column-gap: 20px;  
+}
+
+.logo {
+    border: 2px solid green; 
+    height: 100%; 
+    width: 100px; 
+}
+
+.brand-name{
+    border: 2px solid orange; 
+    height: 100%; 
+    flex-grow: 1; 
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+main {
+    width: 100%; 
+    flex-grow: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+}
+
+.btn-container{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    column-gap: 30px;
+    /* display: none;   */
+}
+
+.btn button{
+    border-radius: 5px; 
+    padding: 0.5rem; 
+    font-size: 2rem;  
+}
+
+.form {
+    width: 100%; 
+    min-height: 100%; 
+    transition-property: all; 
+    transition-duration: 400ms; 
+    transition-timing-function: ease-in-out;
+    display: flex;
+    justify-content: center; 
+    position: absolute; 
+    font-size: 3rem; 
+    left: -10000px;  
+    top:0px; 
+
+}
+
+.login-form {
+    background-color: rgb(217, 133, 147); 
+}
+
+.signup-form-container{
+    font-size: 1.3rem; 
+    /* left: 0px;  */
+    background-color: rgb(242, 242, 242);
+}
+
+/* <======= Form Styles Starts here ======> */
+.form #signup-form{
+    width: 100%;
+    padding: 20px;  
+}
+
+.signup-form-header, .signup-form-footer {
+    display: flex; 
+    justify-content: center; 
+}
+
+.signup-form-header{
+    color: rgb(13, 117, 13); 
+    margin-bottom: 20px; 
+}
+
+.signup-form-footer{
+    margin-top: 20px; 
+}
+
+.submit-btn-container #submit{
+    display: block; 
+    padding: 0.5rem 2rem; 
+    font-size: 1.5rem;
+    border: 1px solid gray; 
+    border-radius: 5px;  
+    cursor: pointer; 
+    background-color: rgb(12, 210, 12); 
+
+    transition-property: all; 
+    transition-duration: 400ms; 
+    transition-timing-function: ease-in-out;
+}
+
+.submit-btn-container #submit:hover{
+    background-color: rgb(21, 178, 21); 
+    color: white; 
+}
+
+.input-fields-container {
+    display: flex; 
+    flex-direction: column;  
+    align-items: start;
+    row-gap: 20px; 
+}
+
+
+.signup-input-field-group{
+    display: flex;
+    flex-direction: column; 
+    row-gap: 5px;  
+}
+
+.group-form-controls{
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    column-gap: 20px; 
+    row-gap: 20px; 
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+input[type="number"],
+select {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.group-heading {
+    font-size: 1.2rem; 
+    font-weight: normal; 
+}
+
+
+.input:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+@media screen and (max-width: 600px){
+    .input-fields-container {
+        align-items: center; 
+    }
+
+    .signup-input-field-group{
+        align-items: center; 
+        width: 100%; 
+    }
+
+    .group-form-controls{
+        flex-direction: column; 
+        align-items: center;
+        width: 100%; 
+    }
+
+    .group-form-controls p{
+        width: 100%; 
+    }
+
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="file"],
+    input[type="number"],
+    select {
+        width: 100%; 
+    }
+}
+
+
+
+
+

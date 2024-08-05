@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shramik Bharat/Login</title>
+    <link rel="stylesheet" href="./Register.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <div class="brand-name">Shramik Bharat</div>
+    </header>
+    <main>
+        
+        <div class="btn-container">
+            <div class="btn btn-worker">
+                <button>Login</button>
+            </div>
+            <div class="btn btn-worker-seeker">
+                <button>Signup</button>
+            </div>
+        </div>
+
+        <div class="form login-form">
+            <div class="worker"> Worker login form</div>
+
+            <div class="worker-seeker"> Worker seeker login form</div>
+        </div>
+
+        <!-- ================ Signup Form Starts here ==================== -->
+        <div class="form signup-form-container"> <!--Flex center(hor and ver)-->
+            <form action="#" method="post" id="signup-form">
+                <div class="signup-form-section signup-form-header">
+                    <h2>Signup Form</h2>
+                </div>
+
+                <div class="input-fields-container signup-form-section">
+
+                    <div class="signup-input-field-group account-detail-group-container">
+                        <h3 class="group-heading">Account Detatil<span class="important">*</span></h3>
+                        <div class="group-form-controls account-detail">
+                            <p><input type="text" name="username" id="username" required placeholder="Username" class="input"></p>
+                            <p><input type="password" name="passwords" id="password" required placeholder="Password" class="input"></p>
+                            <p><input type="password" name="confirm-password" id="confirm-password" required placeholder="Confirm-password" class="input"></p>
+                        </div>
+                    </div>
+
+                    <div class="signup-input-field-group">
+                        <h3 class="group-heading">Contact Detatil<span class="important">*</span></h3>
+                        <div class="group-form-controls">
+                            <p><input type="email" name="email" id="email" required placeholder="Email Address" class="input"></p>
+                            <p><input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input"></p>
+                        </div>
+                    </div>
+
+                    <div class="signup-input-field-group">
+                        <h3 class="group-heading">Personal Detatil<span class="important">*</span></h3>
+                        <div class="group-form-controls">
+                            <p>
+                                <input type="text" name="full-name" id="full-name" required placeholder="Full Name" class="input">
+                            </p>
+                            <p>
+                                <input type="date" name="dob" id="dob" required class="input">
+                            </p>
+                            <p>
+                                <label for="gender">Gender:</label>
+                                <select id="gender" name="gender" required placeholder="Gender" class="input">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="profilePicture">Profile Picture:</label>
+                                <input type="file" id="profilePicture" name="profilePicture" class="input">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="signup-input-field-group">
+                        <h3 class="group-heading">Current Address<span class="important">*</span></h3>
+                        <div class="group-form-controls">
+                            <p>
+                                <input type="text" name="village" id="village" required placeholder="Village" class="input">
+                            </p>
+                            <p>
+                                <input type="text" name="city" id="city" required placeholder="City" class="input">
+                            </p>
+                            <p>
+                                <input type="text" name="state" id="state" required placeholder="State" class="input">
+                            </p>
+                            <p>
+                                <input type="text" name="country" id="country" required placeholder="Country" class="input">
+                            </p>
+                            <p>
+                                <input type="number" name="pincode" id="pincode" required placeholder="Pin / Postal Code" class="input">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="signup-input-field-group">
+                        <h3 class="group-heading">Role<span class="important">*</span></h3>
+                        <div class="group-form-controls">
+                            <p>
+                                <select id="role" name="role" required placeholder="Select Your Role" class="input">
+                                    <option value="contractor">Contractor</option>
+                                    <option value="individual">Individual</option>
+                                    <option value="worker">Woker</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Visisble if worker role is selected -->
+                    <div class="signup-input-field-group">
+                        <div class="group-form-controls">
+                            <p>
+                                <label for="occupation">Occupation:</label>
+                                <select name="occupation" id="occupation" class="input">
+                                    <option value="mason">Mason</option>
+                                    <option value="labourer">Labourer</option>
+                                    <option value="electrician">Electrician</option>
+                                    <option value="plumber">Plumber</option>
+                                    <option value="painter">Painter</option>
+                                    <option value="welder">Welder</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="availability">Availability:</label>
+                                <select name="availability" id="availability" class="input">
+                                    <option value="part-time">Part Time</option>
+                                    <option value="full-time">Full Time</option>
+                                    <option value="contract">Contract</option>
+                                </select>
+                            </p>
+                            
+                        </div>
+                    </div>         
+                    <div class="signup-input-field-group">
+                        <p>
+                            <input type="checkbox" name="tandc" id="tandc" required>
+                            <label for="tandc">I agree to the Terms and condition</label> 
+                        </p>
+                        <p>
+                            <input type="checkbox" name="privacy-policy" id="privacy-policy" required>
+                            <label for="privacy-policy">I agree to the Privacy Policy</label>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="submit-btn-container signup-form-section signup-form-footer">
+                    <button type="submit" id="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <script src="./Register.js"></script>
+
+</body>
+</html>

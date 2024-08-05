@@ -1,0 +1,73 @@
+
+
+  .containers {
+    height: 250px;
+    width: 80%;
+margin-top: 20px;
+margin-bottom: 12px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e1e0e0;
+    border-color: black;
+    border-width:1.5px;
+  }
+
+  .job-details {
+    background-color: #fff;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+  }
+
+  .job-details h3 {
+    margin-top: 0;
+  }
+  .job-details h4 {
+    margin-top: 0;
+    color: #373738;
+  }
+
+  .job-details p {
+    margin: 8px 0;
+  }
+  .location{
+    display: flex;
+  }
+
+  .details {
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .details img{
+    padding: 8px;
+  }
+  .pay{
+    display: flex;
+    text-align: center;
+    height: 20px;
+  }
+
+
+  .employer-details p {
+    margin: 10px 0;
+  }
+
+  .button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #0056b3;
+  }

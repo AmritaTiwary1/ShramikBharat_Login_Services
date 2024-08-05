@@ -1,14 +1,14 @@
-body {
-    font-family: sans-serif;
+.box{
     background-color: #621af2;
-    display: flex;
+    font-family: sans-serif;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
   }
 
-  .container {
-    background-color: #fff;
+  .containers{
+    background-color: rgb(229, 238, 229);
+    margin:auto;
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

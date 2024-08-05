@@ -2,7 +2,7 @@ const headerHTML = ` <header class="section-navbar">
       <div class="head container">
         <div class="web-brand">
          
-          <h2 class="brand-name">Shramik Bharat</h2>
+          <h2 style="color: rgb(12, 12, 123);" class="brand-name">Shramik Bharat</h2>
         </div>
 
         <navbar class="navbar">

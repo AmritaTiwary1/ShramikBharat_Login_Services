@@ -5,16 +5,26 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- Google font Api -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+
+    <!-- fontawesome icon api -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  Alpine.js -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    
+    <!--Tailwind CSS Classes -->
+    <!-- <link rel="stylesheet" href="./css/output.css"> -->
+    <!--Tailwindcss mini version -->
+    <link rel="stylesheet" href="./css/output.min.css">
+
 
     <link rel="stylesheet" href="style.css" />
-
+    
     <title>Shramik Bharat</title>
   </head>
   <body>
@@ -58,57 +68,137 @@
 
     <!-- ========== Start Hero Section ========== -->
 
-    <main>
-      <section class="section-hero">
-        <div class="container grid grid-two--rows">
-          <div class="section-hero--content grid grid-two--cols">
-            <div class="hero-text">
-              <h3 style="color: gray;" class="hero-subheading">WELCOME TO OUR WEBSITE</h3>
-              <h2 class="hero-heading">Get Your Job Done On Demand</h2>
-             
-            </div>
-            <div class="hero-img"><img src="hero-pic.png" alt="" height="250px" width="400px"></div>
-          </div>
-          
+    <hero class="block" aria-label="hero">
+      <section class="bg-accent2 flex flex-col gap-5 sm:gap-16 p-0 pt-2 lg:p-4 xl:p-8 overflow-hidden">
+        
+        <!-- Services Search -->
+        <div 
+          x-data="{ openSearch: false }"
+          class="flex flex-col items-center gap-2
+                lg:static relative">
 
-          <div class="searchbar">
-            <div class="search-boxes">
-              <div class="box">
-                <p class="categroy-text">
-                  <i class="fa-solid fa-magnifying-glass box-icon"></i> &nbsp;
-                  Services
-                </p>
-              </div>
-
-              <div class="box">
-                <p class="categroy-text">
-                  <i class="fa-solid fa-magnifying-glass box-icon"></i> &nbsp;
-                  Location
-                </p>
-              </div>
-
-              <div class="box">
-                <p class="categroy-text">
-                  <i class="fa-solid fa-magnifying-glass box-icon"></i> &nbsp;
-                  Price Filter
-                </p>
-              </div>
-
-              <div class="box">
-                <p class="categroy-text">
-                  <button class="search-btn">
-                    <i class="fa-solid fa-magnifying-glass box-icon"></i> &nbsp;
-                    Search
-                  </button>
-                </p>
-              </div>
+          <!--Toggle service search pannel -->
+          <div 
+            @click="openSearch = !openSearch"
+            class="flex flex-row justify-center items-center lg:hidden  cursor-pointer">
+            <div 
+              class="flex flex-row items-center gap-3
+                    px-5 py-2 bg-primary text-white rounded-lg"
+              >
+              <h2 class="text-white text-xl ">Find Services</h2>
+              <p class="text-white text-xl">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </p>
             </div>
           </div>
+
+          <div 
+            x-cloak
+            x-show="openSearch"
+            @click.away="openSearch = false"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 -translate-y-10"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-10"
+            class="bg-accent2 w-11/12 sm:w-2/4 lg:w-full 
+            flex flex-col lg:!grid grid-cols-12 gap-2 xl:p-6 xl:py-3 p-2 border-2 border-white rounded-lg
+            absolute top-full+10 lg:static z-10
+            ">
+
+            <!-- Services Search -->
+            <div class="col-start-1 col-end-5">
+              <div class="flex flex-row items-center bg-white rounded-lg pl-2">
+                <img src="./media/icons/services.png" alt="Services"
+                  class="w-4 h-4 lg:w-6 lg:h-6"
+                >
+                <input 
+                  type="text" placeholder="Search Services" 
+                  class="pl-2 lg:pl-4 py-3 xl:text-xl text-base lg:text-lg rounded-lg lg:grow-[1] border-none outline-none"
+                />
+              </div>
+            </div>
+
+            <!-- Location Search -->
+            <div class="col-start-5 col-end-9">
+              <div class="flex flex-row items-center bg-white rounded-lg pl-2">
+                <img src="./media/icons/location.png" alt="Location"
+                  class="w-4 h-4 lg:w-6 lg:h-6"
+                >
+                <input 
+                  type="text" placeholder="Search Location" 
+                  class="pl-2 lg:pl-4 py-3 xl:text-xl text-base lg:text-lg rounded-lg grow-[1] border-none outline-none"
+                />
+              </div>
+            </div>
+
+            <!--Price Range-->
+            <div class="col-start-9 col-end-11">
+              <div class="flex flex-row justify-center items-center rounded-lg py-3 price-range-container bg-white pl-1">
+                
+                <label for="price-range" class="cursor-pointer">
+                  <img src="./media/icons/filter.png" alt="Filter"
+                    class="price-label w-2 h-2 lg:w-6 lg:h-6">
+                </label>
+
+                <select type="text" name="price-range" id="price-range"
+                  class="outline-none lg:px-2 text-base lg:text-lg xl:text-xl bg-white "
+                >
+                  <option value="0-200">0 - 200</option>
+                  <option value="200-320">200 - 320</option>
+                  <option value="320-500">320 - 500</option>
+                  <option value="500-800">500 - 800</option>
+                  <option value="800-1000">800 - 1000</option>
+                  <option value="1000-higer">1000 - higher</option>
+                  
+                </select>
+                
+              </div>
+            </div>
+
+            <!-- Search button -->
+            <div class="col-start-11 col-end-13">
+              <button
+                class="py-2 pb-3 text-white text-xl rounded-lg w-full bg-secondary hover:bg-secondary-hover transition duration-200"
+                >Search</button>
+            </div>
+
+          </div>
+
+        </div>
+        
+        <!-- Website HERO Text -->
+        <div class="grid grid-cols-2 font-roboto select-none md:pb-5
+              md:bg-accent2 bg-hero md:bg-none bg-cover bg-center bg-no-repeat
+        ">
+
+          <!-- Overlay element -->
+          <div class="block md:hidden col-start-1 col-span-2 row-start-1 bg-neutral-600 bg-opacity-70"></div>
+
+          <!--Hero text-->
+          <div class="flex flex-col gap-10 items-center justify-center col-start-1 row-start-1 col-span-2 md:col-span-1">
+              <h2 class="text-5xl font-bold text-accent3 leading-snug px-2 sm:px-10">
+                Connecting 
+                <span class="text-secondary">workers,</span>
+                Creating opportunities
+              </h2>
+            <p class="font-roboto font-bold text-base md:text-lg text-white md:text-neutral-300 px-2 sm:px-10 pb-5">
+              <span class="text-secondary text-xl">Shramik Bharat</span> connects skilled professionals with premium job opportunities transforming hiring by connecting top talent with leading employers, fostering career advancement.
+            </p>
+          </div>  
+
+          <!--Hero Image-->
+          <div class="overflow-hidden rounded-tl-3xl rounded-bl-3xl translate-x-[40px] hidden md:block">
+            <img src="./media/hero_image.jpg" alt="Worker"
+              class="w-full h-full object-cover">
+          </div>
+
+
         </div>
 
-       
       </section>
-    </main>
+    </hero>
 
     <!-- ========== End Hero Section ========== -->
 

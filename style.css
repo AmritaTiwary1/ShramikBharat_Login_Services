@@ -12,7 +12,7 @@
 
 html {
   font-family: "Urbanist", sans-serif;
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
   color: var(--text-color);
   line-height: 1.5;
   font-weight: 600;
@@ -114,7 +114,7 @@ a {
 
 /* module */
 
-button {
+/* button {
   font-family: "Poppins", sans-serif;
   font-weight: 550;
   display: inline-block;
@@ -127,7 +127,7 @@ button {
   -moz-border-radius: 0.4rem;
   -ms-border-radius: 0.4rem;
   -o-border-radius: 0.4rem;
-}
+} */
 
 /* states */
 
@@ -207,6 +207,9 @@ button {
   }
 }
 /***** End Navbar Section *****/
+
+
+
 
 /***** Start Hero Section *****/
 
@@ -291,6 +294,8 @@ main .container {
     padding: 1rem 2rem 2rem 2rem;
   }
 }
+
+
 /***** End Hero Section *****/
 
 /***** Start How It Works? Section *****/

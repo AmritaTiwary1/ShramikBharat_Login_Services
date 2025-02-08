@@ -24,7 +24,7 @@
     
 
     <!--Tailwind CSS Classes -->
-    <!-- <link rel="stylesheet" href="./css/output.css"> -->
+    <link rel="stylesheet" href="./css/output.css">
     <!--Tailwindcss mini version -->
     <link rel="stylesheet" href="./css/output.min.css">
 
@@ -272,46 +272,37 @@
 
     <!-- ========== Start How It Works Section ========== -->
 
-    <section class="section-how-it-works">
-      <div class="container">
-        <div class="hitw-heading">
-          <h2 class="hitw-title">How It Works?</h2>
+    <section class="my-10">
+      <div class="bg-accent2 space-y-8 py-8">
+        <div class="px-7 text-white font-bold text-2xl">
+          <h2 class="text-white font-bold text-3xl">How to Find WORK Here?</h2>
         </div>
 
-        <div class="container grid grid-two--cols">
-          <div class="hitw-content grid grid-three--rows">
-            <div class="box grid grid-two--cols">
-              <div class="icon"><i class="fa-solid fa-user"></i></div>
-              <div class="text">
-                <p>Step 1</p>
-                <h3 class="text-title">Create an Account</h3>
-                <p>
-                 Register on our website to find jobs.
-                </p>
-              </div>
-            </div>
+        <!-- Progress Element -->
+        <div class="pl-10">
+          <div class="h-96 w-full pl-8 relative text-xl">
+              <div id="progressElement" class="h-full w-2 rounded-xl bg-white"></div>
 
-            <div class="box grid grid-two--cols">
-              <div class="icon"><i class="fa-solid fa-user"></i></div>
-              <div class="text">
-                <p>Step 2</p>
-                <h3 class="text-title">Search Jobs in Service Section</h3>
-                <p>
-                 Go to Service Section and find the your job
-                </p>
+              <div class="step-1 absolute -top-0.5 left-0 h-auto w-full flex flex-row gap-2 sm:gap-10 sm:items-center">
+                  <div class="activeStep step w-20 h-20 flex-shrink-0 rounded-full border-2 border-yellow-400 bg-white flex justify-center items-center self-start">
+                      <p class="font-bold text-black">Step 1</p>
+                  </div>
+                  <p class="pt-5 sm:pt-0 font-semibold  text-xl sm:text-2xl">Create an Account.</p>
               </div>
-            </div>
 
-            <div class="box grid grid-two--cols">
-              <div class="icon"><i class="fa-solid fa-user"></i></div>
-              <div class="text">
-                <p>Step 3</p>
-                <h3 class="text-title">Contact To The worker-seeker</h3>
-                <p>
-                 If you find the job then click on INTERESTED button and Establish the contact directly with the worker-seeker 
-                </p>
+              <div class="step-2 absolute top-1/2 -translate-y-1/2 left-0 h-auto w-full flex flex-row gap-2 sm:gap-10 items-center">
+                  <div class="activeStep step w-20 h-20 flex-shrink-0 rounded-full border-2 border-yellow-400 bg-white flex justify-center items-center">
+                      <p class="font-bold text-black">Step 2</p>
+                  </div>
+                  <p class="pt-5 sm:pt-0 font-semibold text-xl sm:text-2xl">Search Job you are interested for.</p>
               </div>
-            </div>
+
+              <div class="step-3 absolute -bottom-0.5 left-0 h-auto w-full flex flex-row gap-2 sm:gap-10 sm:items-center">
+                  <div class="activeStep step w-20 h-20 flex-shrink-0 rounded-full border-2 border-yellow-400 bg-white flex justify-center items-center self-end">
+                      <p class="font-bold text-black">Step 3</p>
+                  </div>
+                  <p class="pt-5 sm:pt-0 font-semibold text-xl sm:text-2xl">GRAB the Work that meets yours Excepections.</p>
+              </div>
           </div>
         </div>
       </div>
@@ -465,6 +456,7 @@
 		<script
     type="module"
     src="./src/js/main.js"></script>
+   <script src="./src/js/how_to_use.js"></script>
 
   </body>
 </html>

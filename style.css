@@ -396,8 +396,6 @@ main .container {
   & .container {
     background-color: #202020;
     border: 1px solid black;
-    border-top-right-radius: 0.4rem;
-    border-top-left-radius: 0.4rem;
     padding: 5.6rem 2.6rem 0 2.6rem;
 
     & h3,

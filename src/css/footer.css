@@ -1,0 +1,150 @@
+.section-footer {
+  & .container {
+    background-color: var(--text-sy-color);
+    padding: 6rem;
+    margin: 0.2rem auto;
+    margin-bottom: 0;
+
+    & h3,
+    p,
+    a {
+      color: var(--text-do-color);
+    }
+  }
+
+  & .footer-content {
+    gap: 2rem;
+    & .brands-content {
+      & img {
+        width: 40%;
+      }
+
+      & p {
+        color: var(--text-wh-color);
+      }
+
+      & span {
+        color: var(--text-do-color);
+      }
+    }
+
+    & h3 {
+      color: var(--text-do-color);
+      display: flex;
+      align-items: center;
+    }
+
+    & .section-quicklinks {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      & a:hover {
+        color: var(--text-wh-color);
+      }
+    }
+
+    & .section-contactus {
+      margin: 0 0;
+    }
+
+    & .section-newsletter .subscribe {
+      display: flex;
+
+      & button {
+        padding: 0.5rem 0.5rem 0.5rem 0;
+      }
+    }
+
+    & .section-newsletter {
+      & .subscribe {
+        display: flex;
+      }
+    }
+
+    & .section-newsletter input[type="email"] {
+      background-color: var(--primary-background-color);
+      border-radius: 0.2px;
+      color: var(--background-color);
+      outline: none;
+      border: 1px solid var(--border-do-color);
+      padding: 0.6rem 1rem;
+      font-size: 1.2rem;
+      width: 80%;
+    }
+  }
+
+  & .footer-attribution.container {
+    background-color: var(--secondary-background-color);
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+
+    & p {
+      color: var(--text-wh-color);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .section-footer {
+    & .footer-content.grid.grid-two--cols {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 2rem;
+
+      & .section-contactus {
+        margin: 0 0rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .section-footer {
+    & .footer-content.grid.grid-two--cols {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 2rem;
+
+      & .section-contactus {
+        margin: 0 0rem;
+      }
+
+      & .section-newsletter {
+        & .subscribe {
+          width: 100%;
+          display: block;
+          margin: 1rem 0;
+          & button {
+            margin: 0;
+            width: 80%;
+          }
+        }
+      }
+
+      & .section-newsletter input[type="email"] {
+        background-color: var(--primary-background-color);
+        border-radius: 0.2px;
+        color: var(--background-color);
+        outline: none;
+        border: 1px solid var(--border-do-color);
+        padding: 0.6rem 1rem;
+        font-size: 1.2rem;
+        width: 80%;
+      }
+    }
+
+    & .footer-attribution.container {
+      background-color: var(--secondary-background-color);
+      width: 100%;
+      padding: 1rem;
+      margin: 0 auto;
+
+      & p {
+        font-size: 0.9rem;
+        color: var(--text-wh-color);
+      }
+    }
+  }
+}

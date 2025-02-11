@@ -334,59 +334,128 @@
 
     <!-- ========== Start Blogs Section ========== -->
 
-    <section class="section-blogs" id="blogs">
-      <div class="container">
-        <div class="blogs-title">
-          <h2>Explore Our Blogs</h2>
-        </div>
+    <blog
+      role="region" 
+      aria-labelledby="Shramik Bharat's Blogs"
+      id="blogs"
+      class="block p-8 bg-accent2 space-y-4" >
+      
+        <h2 class="text-white font-bold text-3xl">
+          Explore Our Blogs
+        </h2>
 
-        <div class="container grid grid-four--cols cards">
-          <div class="blog-card">
-            <div class="card-img">
-              <img
-                src="https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt=""
-              />
-            </div>
-            <p><i class="fa-regular fa-calendar"></i> &nbsp; Sept 22 2024</p>
-            <p>How we helped thousands of people to find works</p>
-          </div>
+        <section 
+          aria-labelledby="blogs-posts"
+          class="flex gap-4 gap-y-8 justify-center sm:!justify-between p-3 flex-wrap items-stretch">
 
-          <div class="blog-card">
-            <div class="card-img">
-              <img
-                src="https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt=""
-              />
-            </div>
-            <p><i class="fa-regular fa-calendar"></i> &nbsp; Sept 22 2024</p>
-            <p>Benefits of using our website</p>
-          </div>
+          <article 
+          aria-labelledby="blog-post"
+          class="border-2 border-accent3 rounded-lg w-80 sm:w-64 hover:cursor-pointer hover:scale-105 transition duration-200">
 
-          <div class="blog-card">
-            <div class="card-img">
-              <img
-                src="https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt=""
-              />
-            </div>
-            <p><i class="fa-regular fa-calendar"></i> &nbsp; Sept 22 2024</p>
-            <p>workers reaction on our website</p>
-          </div>
+		  	<a href="#"
+		  		class="space-y-3 "
+			>
+				<!--post Image-->
+				<div class="w-full overflow-hidden">
+				<img
+					src="./media/blog-posts/how_we_help.jpeg"
+					alt=""
+					class="w-full h-[168px] object-cover"
+				/>
+				</div>
+	
+				<!--post content summary-->
+				<div class="flex flex-col gap-4 px-4 py-1">
+				<h3 class="text-secondary flex flex-row gap-1 items-center sm:text-xl"><i class="fa-regular fa-calendar"></i> Sept 22 2024 </h3>
+				<p class="text-xl">How we helped thousands of people to find works?</p>
+				</div>
+			</a>
 
-          <div class="blog-card">
-            <div class="card-img">
-              <img
-                src="https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt=""
-              />
-            </div>
-            <p><i class="fa-regular fa-calendar"></i> &nbsp; Sept 22 2024</p>
-            <p>know more about us</p>
-          </div>
-        </div>
-      </div>
-    </section>
+          </article>
+
+
+          <article 
+            aria-labelledby="blog-post"
+            class="border-2 border-accent3 rounded-lg w-80 sm:w-64 hover:cursor-pointer hover:scale-105 transition duration-200 ">
+
+            <a href="#"
+				class="space-y-3 "
+			>
+				<!--post Image-->
+				<div class="w-full overflow-hidden">
+					<img
+					  src="./media/blog-posts/benifits.jpeg"
+					  alt=""
+					  class="w-full h-[168px] object-cover"
+					/>
+				</div>
+	  
+				  <!--post content summary-->
+				  <div class="flex flex-col gap-4 px-4 py-1">
+					<h3 class="text-secondary flex flex-row gap-1 items-center sm:text-xl"><i class="fa-regular fa-calendar"></i> Dec 2 2024 </h3>
+					<p class="text-xl">Benefits of using our Website</p>
+				  </div>
+
+			</a>
+
+          </article>
+
+          <article 
+          aria-labelledby="blog-post"
+          class="border-2 border-accent3 rounded-lg w-80 sm:w-64 hover:cursor-pointer hover:scale-105 transition duration-200">
+
+            <a href="#"
+              class="space-y-3"
+            >
+              <!--post Image-->
+              <div class="w-full overflow-hidden">
+                <img
+                  src="./media/blog-posts/testimonial.jpg"
+                  alt=""
+                  class="w-full h-[168px] object-cover"
+                />
+              </div>
+
+              <!--post content summary-->
+              <div class="flex flex-col gap-4 px-4 py-1">
+                <h3 class="text-secondary flex flex-row gap-1 items-center sm:text-xl"><i class="fa-regular fa-calendar"></i> Oct 19 2024 </h3>
+                <p class="text-xl">Worker's reaction on our platform</p>
+              </div>
+
+            </a>
+
+          </article>
+
+
+          <article 
+          aria-labelledby="blog-post"
+          class="border-2 border-accent3 rounded-lg w-80 sm:w-64 hover:cursor-pointer hover:scale-105 transition duration-200">
+
+          <a href="#"
+		 	class="space-y-3" 
+		  >
+			<!--post Image-->
+			<div class="w-full overflow-hidden">
+				<img
+				  src="./media/blog-posts/about_us.jpeg"
+				  alt=""
+				  class="w-full h-[168px] object-cover"
+				  loading="lazy"
+				/>
+			  </div>
+	
+			  <!--post content summary-->
+			  <div class="flex flex-col gap-4 px-4 py-1">
+				<h3 class="text-secondary flex flex-row gap-1 items-center sm:text-xl"><i class="fa-regular fa-calendar"></i> Aug 15 2024 </h3>
+				<p class="text-xl">Know more about us</p>
+			  </div>
+		  </a>
+
+          </article>
+
+     	</section>
+      
+    </blog>
 
     <!-- ========== End Blogs Section ========== -->
 

@@ -4,22 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shramik Bharat/Register</title>
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Google font Api -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome icon api -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--  Alpine.js -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+
+    <!-- Link Navbar section stylesheet-->
+    <link rel="stylesheet" href="./src/css/styles.css" />
+
+    <!--Tailwind CSS Classes -->
+    <!-- <link rel="stylesheet" href="./css/output.css" /> -->
+    <!--Tailwindcss mini version -->
+    <link rel="stylesheet" href="./css/output.min.css" />
+
+    <!-- Header css -->
+    <link rel="stylesheet" href="./src/css/header.css" />
+
+    <!-- Footer css -->
+    <link rel="stylesheet" href="./src/css/footer.css" />
     <link rel="stylesheet" href="./Register.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Link Navbar section stylesheet-->
+    <link rel="stylesheet" href="./src/css/styles.css" />
+
+
 </head>
-<body>
-    <header class="section-header">
-        <script type="module" src="header.js"></script>
-      </header>
+<body class="bg-accent1">
+    <header class="section-navbar container !py-4">
+        <div class="web-brand">
+          <i class="hamburger fa-solid fa-burger"></i>
+          <a href="/">
+            <img
+              src="./assets/images/logo.svg"
+              alt="brand logo"
+              class="brand-logo"
+            />
+          </a>
+        </div>
+  
+        <div class="navbar">
+          <navbar>
+            <i class="cross fa-solid fa-xmark"></i>
+            <ul>
+              <li class="nav-link">
+                <a href="/" class="nav-link">home</a>
+              </li>
+
+              <li class="nav-link" id="services">
+                <div class="menu">
+                  <a href="#services" class="nav-link"
+                    >services <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <ul class="dropdown [&>li>a]:!text-white">
+                    <li class="services-menu"><a href="#">Labourer</a></li>
+                    <li class="services-menu"><a href="#">Plumber</a></li>
+                    <li class="services-menu"><a href="#">Electrician</a></li>
+                    <li class="services-menu"><a href="#">Welder</a></li>
+                    <li class="services-menu"><a href="#">Painter</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-link" id="resources">
+                <div class="menu">
+                  <a href="#resources" class="nav-link"
+                    >resources <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <ul class="dropdown [&>li>a]:!text-white">
+                    <li class="resources-menu">
+                      <a href="#why">Why Us ?</a>
+                    </li>
+                    <li class="resources-menu">
+                      <a href="#">Get Started</a>
+                    </li>
+                    <li class="resources-menu"><a href="#"></a></li>
+                    <li class="resources-menu"><a href="#"></a></li>
+                    <li class="resources-menu"><a href="#"></a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-link">
+                <a href="#blogs" class="nav-link">blogs</a>
+              </li>
+              <li class="nav-link">
+                <a href="/contact.html" class="nav-link">contact us</a>
+              </li>
+            </ul>
+          </navbar>
+        </div>
+  
+        <div class="account">
+          <a class="login-btn" href="/login.html">login</a>
+          <a class="register-btn" href="./register.html">register</a>
+        </div>
+    </header>
+    
     <main>
         <!-- ================ Signup Form Starts here ==================== -->
         <div class="form signup-form-container"> <!--Flex center(hor and ver)-->
-            <form action="#" method="post" id="signup-form">
+            <form action="#" method="post" id="signup-form"
+                class="!text-black"
+            >
                 <div class="signup-form-section signup-form-header">
-                    <h2>Registration Form</h2>
+                    <h2 class="text-3xl">Registration Form</h2>
                 </div>
 
-                <div class="input-fields-container signup-form-section">
+                <div class="input-fields-container signup-form-section ">
 
                     <div class="signup-input-field-group account-detail-group-container">
                         <h3 class="group-heading">Account Detatil<span class="important">*</span></h3>
@@ -45,19 +156,22 @@
                                 <input type="text" name="full-name" id="full-name" required placeholder="Full Name" class="input">
                             </p>
                             <p>
-                                <input type="date" name="dob" id="dob" required class="input">
+                                <input type="date" name="dob" id="dob" required class="input font-normal text-lg">
                             </p>
                             <p>
-                                <label for="gender">Gender:</label>
-                                <select id="gender" name="gender" required placeholder="Gender" class="input">
+                                <label class="text-lg font-normal" for="gender">Gender:</label>
+                                <select id="gender" name="gender" required placeholder="Gender" class="input font-normal text-lg">
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
                                     <option value="other">Other</option>
                                 </select>
                             </p>
                             <p>
-                                <label for="profilePicture">Profile Picture:</label>
-                                <input type="file" id="profilePicture" name="profilePicture" class="input">
+                                <label for="profilePicture"
+                                    class="text-lg font-normal">
+                                    Profile Picture:
+                                </label>
+                                <input type="file" id="profilePicture" name="profilePicture" class="input font-normal text-lg">
                             </p>
                         </div>
                     </div>
@@ -87,7 +201,7 @@
                         <h3 class="group-heading">Role<span class="important">*</span></h3>
                         <div class="group-form-controls">
                             <p>
-                                <select id="role" name="role" required placeholder="Select Your Role" class="input">
+                                <select id="role" name="role" required placeholder="Select Your Role" class="input font-normal text-lg">
                                     <option value="contractor">Contractor</option>
                                     <option value="individual">Individual</option>
                                     <option value="worker">Woker</option>
@@ -100,8 +214,10 @@
                     <div class="signup-input-field-group">
                         <div class="group-form-controls">
                             <p>
-                                <label for="occupation">Occupation:</label>
-                                <select name="occupation" id="occupation" class="input">
+                                <label 
+                                    class="font-normal text-lg"
+                                    for="occupation">Occupation:</label>
+                                <select name="occupation" id="occupation" class="input text-lg font-normal">
                                     <option value="mason">Mason</option>
                                     <option value="labourer">Labourer</option>
                                     <option value="electrician">Electrician</option>
@@ -111,8 +227,12 @@
                                 </select>
                             </p>
                             <p>
-                                <label for="availability">Availability:</label>
-                                <select name="availability" id="availability" class="input">
+                                <label for="availability"
+                                    class="font-normal text-lg"
+                                >
+                                    Availability:
+                                </label>
+                                <select name="availability" id="availability" class="input font-normal text-lg">
                                     <option value="part-time">Part Time</option>
                                     <option value="full-time">Full Time</option>
                                     <option value="contract">Contract</option>
@@ -121,14 +241,14 @@
                             
                         </div>
                     </div>         
-                    <div class="signup-input-field-group">
+                    <div class="signup-input-field-group font-normal text-lg">
                         <p>
                             <input type="checkbox" name="tandc" id="tandc" required>
-                            <label for="tandc">I agree to the Terms and condition</label> 
+                            <label for="tandc" class="font-normal text-lg">I agree to the Terms and condition</label> 
                         </p>
                         <p>
                             <input type="checkbox" name="privacy-policy" id="privacy-policy" required>
-                            <label for="privacy-policy">I agree to the Privacy Policy</label>
+                            <label for="privacy-policy" class="font-normal text-lg">I agree to the Privacy Policy</label>
                         </p>
                     </div>
                 </div>
@@ -138,9 +258,9 @@
                 </div>
             </form>
         </div>
-
     </main>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="./src/js/main.js"></script>
+    <script src="./src/js/how_to_use.js"></script>
 
-</body>
-<script type="module" src="./main.js"></script>
 </html>

@@ -14,7 +14,6 @@ body{
     display: flex; 
     flex-direction: column;
     row-gap: 10px;  
-    background-color: blue;
 }
 
 
@@ -144,7 +143,7 @@ select {
 
 .group-heading {
     font-size: 1.2rem; 
-    font-weight: normal; 
+    font-weight: 600; 
 }
 
 
@@ -182,7 +181,8 @@ select {
     input[type="file"],
     input[type="number"],
     select {
-        width: 100%; 
+        width: 100%;
+         
     }
 }
 

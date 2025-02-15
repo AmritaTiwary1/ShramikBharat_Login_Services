@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
 
     <!--Tailwind CSS Classes -->
-    <link rel="stylesheet" href="./css/output.css" />
+    <!-- <link rel="stylesheet" href="./css/output.css" /> -->
     <!--Tailwindcss mini version -->
     <link rel="stylesheet" href="./css/output.min.css" />
 
@@ -43,7 +43,7 @@
 
     <title>Shramik Bharat</title>
   </head>
-  <body>
+  <body class="bg-accent1">
     <!-- ========== Navbar Start Section ========== -->
 
     <header class="section-navbar container">
@@ -461,30 +461,55 @@
 
     <!-- ========== Start Why Choose Us Section ========== -->
 
-    <section class="section-why-choose-us">
-      <div class="container">
-        <div class="wcus-title">
-          <h2>Why Choose Us</h2>
-        </div>
+    <section class="mt-10 p-8 bg-accent2 space-y-4">
+      <h2 class="text-white font-bold text-3xl">
+        Why Choose Us
+      </h2>
 
-        <div class="container grid grid-three--cols">
-          <div class="wcus-card">
-            <i class="fa-solid fa-handshake wcus-card-icon"></i>
-            <h3>Meet New Customers</h3>
-            <p>Do not limit your Customers</p>
-          </div>
-          <div class="wcus-card">
-            <i class="fa-solid fa-handshake wcus-card-icon"></i>
-            <h3>Directly contact us</h3>
-            <p>Whenever you see a problem ,you can directly contact to us</p>
-          </div>
+      <div class="flex gap-4 gap-y-8 justify-center sm:!justify-between p-3 flex-wrap items-stretch [&>*]:w-80 [&>*]:sm:!w-64 [&>*]:lg:!w-1/4">
+        
+        <article 
+          class="border-2 border-accent3 rounded-lg hover:cursor-pointer hover:scale-105 transition duration-200 ">
+            <img
+              src="./media/why-us/meet-new-customer.jpg"
+              alt=""
+              class="w-full h-[168px] object-cover"
+            />
+            <div 
+              class="flex flex-col gap-4 px-4 py-1">
+              <h3 class="!text-secondary">Meet New Customers</h3>
+              <p>Do not limit your Customers</p>
+            </div>
+        </article>
 
-          <div class="wcus-card">
-            <i class="fa-solid fa-handshake wcus-card-icon"></i>
-            <h3>Friendly user interface</h3>
-            <p>We made a simple website design for better user Experience</p>
-          </div>
-        </div>
+        <article 
+          class="border-2 border-accent3 rounded-lg hover:cursor-pointer hover:scale-105 transition duration-200 ">
+            <img
+              src="./media/why-us/contact-us.png"
+              alt=""
+              class="w-full h-[168px] object-cover"
+            />
+            <div 
+              class="flex flex-col gap-4 px-4 py-1">
+              <h3 class="!text-secondary">Directly contact us</h3>
+              <p>Whenever you see a problem, you can directly contact to us</p>
+            </div>
+        </article>
+
+        <article 
+          class="border-2 border-accent3 rounded-lg hover:cursor-pointer hover:scale-105 transition duration-200 ">
+            <img
+              src="./media/why-us/friendly-user-interface.jpeg"
+              alt=""
+              class="w-full h-[168px] object-cover"
+            />
+            <div 
+              class="flex flex-col gap-4 px-4 py-1">
+              <h3 class="!text-secondary">Friendly user interface</h3>
+              <p>We provide simple User interface for better user Experience</p>
+            </div>
+        </article>
+
       </div>
     </section>
 
@@ -492,7 +517,7 @@
 
     <!-- ========== Start Footer Section ========== -->
 
-    <footer class="section-footer">
+    <footer class="section-footer mt-10">
       <div class="container">
         <div class="footer-content grid grid-two--cols">
           <div class="brands-content">

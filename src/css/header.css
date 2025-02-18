@@ -154,7 +154,7 @@
 			z-index: 1;
 			top: 0;
 			padding: 2rem;
-			width: 60vh;
+			width: 125%;
 			height: 100vh;
 			background-color: var(--tertiary-background-color);
 			display: none;
@@ -179,14 +179,10 @@
 			justify-content: space-between;
 			align-items: flex-end;
 			background-color: var(--tertiary-background-color);
+			/* border: 2px solid; */
 
 			& li {
-				width: 100%;
-
-				&:hover {
-					color: var(--text-wh-color);
-					border-radius: 2px;
-				}
+				width: 70%;
 			}
 
 			& a {
@@ -200,8 +196,12 @@
 
 		& .navbar.active {
 			display: block;
-			transform: translateX(60vw);
-		}
+			transform: translateX(35vw);
+			-webkit-transform: translateX(35vw);
+			-moz-transform: translateX(35vw);
+			-ms-transform: translateX(35vw);
+			-o-transform: translateX(35vw);
+}
 
 		& .navbar.active ul {
 			display: flex;

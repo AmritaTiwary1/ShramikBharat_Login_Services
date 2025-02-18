@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Shramik Bharat/SignIn</title>
-</head>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="Login.css">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-<body>
+    <!-- Link Navbar section stylesheet-->
+    <link rel="stylesheet" href="./src/css/styles.css" />
+
+    <!--Tailwind CSS Classes -->
+    <!-- <link rel="stylesheet" href="./css/output.css" /> -->
+    <!--Tailwindcss mini version -->
+    <link rel="stylesheet" href="./css/output.min.css" />
+
+    <!-- Header css -->
+    <link rel="stylesheet" href="./src/css/header.css" />
+
+    <!-- Footer css -->
+    <link rel="stylesheet" href="./src/css/footer.css" />
+
+    <link rel="stylesheet" href="./src/css/contact.css" />
+
+    <link rel="stylesheet" href="./src/css/login.css" />
+
+    <title>Shramik Bharat/SignIn</title>
+  </head>
+
+  <body>
     <!-- ========== Navbar Start Section ========== -->
 
     <header class="section-header">
@@ -14,36 +39,50 @@
     </header>
 
     <!-- ========== Navbar End Section ========== -->
-     <div class="box">
-  <div class="containers">
-    <h2>Sign In</h2>
+    <div class="box">
+      <div class="containers">
+        <h2>Sign In<i class="fa-solid fa-signature"></i></h2>
 
-    <form>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-      </div>
+        <form>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
 
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password" required>
-      </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
 
-      <div class="form-group">
-        <input type="submit" value="Sign In">
-      </div>
+          <div class="form-group">
+            <input type="submit" value="Sign In" />
+          </div>
 
-      <div class="social-media">
-        <a href="#" class="fa fa-facebook">Facebook</a>
-        <a href="#" class="fa fa-google-plus">Google+</a>
-        <a href="#" class="fa fa-twitter">Twitter</a>
-      </div>
+          <div class="social-media">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
 
-      <div class="forgot-password">
-        <a href="#">Forgot Password?</a>
+          <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+          </div>
+        </form>
       </div>
-    </form>
-  </div>
-</div>
-</body>
+    </div>
+
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
 </html>

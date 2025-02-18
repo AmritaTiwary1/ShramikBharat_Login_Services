@@ -15,7 +15,27 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="style.css"/>
+    <!--  Alpine.js -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Link Navbar section stylesheet-->
+    <link rel="stylesheet" href="./src/css/styles.css" />
+
+    <!--Tailwind CSS Classes -->
+    <!-- <link rel="stylesheet" href="./css/output.css" /> -->
+    <!--Tailwindcss mini version -->
+    <link rel="stylesheet" href="./css/output.min.css" />
+
+    <!-- Header css -->
+    <link rel="stylesheet" href="./src/css/header.css" />
+
+    <!-- Footer css -->
+    <link rel="stylesheet" href="./src/css/footer.css" />
+
+    <link rel="stylesheet" href="./src/css/contact.css" />
+
     <title>Shramik Bharat/Contact Us</title>
   </head>
   <body>
@@ -27,49 +47,59 @@
 
     <!-- ========== Navbar End Section ========== -->
 
-    <section style="background-color: rgb(214, 214, 218);" class="section-contact">
+    <section style="background-color: #28281c" class="section-contact">
       <div class="container">
         <div class="box_1">
-          <h2>Contact Us</h2>
-          <p>
-            Not sure what you need? The team at Wave-T will be happy to listen to
-            you and suggest best deals.
+          <h2>Contact Us<i class="fa-solid fa-phone"></i></h2>
+          <p class="para-1">
+            Not sure what you need? The team at Wave-T will be happy to listen
+            to you and suggest best deals.
           </p>
           <br />
           <br />
-          <p><i class="fa-regular fa-envelope"></i> info@teamwavet.com</p>
+          <p class="para-2">
+            <i class="fa-regular fa-envelope"></i> info@teamwavet.com
+          </p>
           <p><i class="fa-solid fa-phone"></i> Support: (+21) 123 456 586</p>
         </div>
 
-        <div style="background-color: rgb(127, 193, 240);" class="box_2">
+        <div style="background-color: var(--text-sy-color)" class="box_2">
           <h3 class="space">
             We'd love to hear from you! <br />
             Let's get in touch
           </h3>
-          <br>
+          <br />
           <div class="input-boxes">
             <form action="" method="POST">
               <div class="grid grid-two--cols">
                 <div class="username">
                   <label for="username" class="space">Full Name</label>
-                  <input type="text" id="username" name="username"/>
+                  <input
+                    type="text"
+                    placeholder="Enter your full name..."
+                    id="username"
+                    name="username"
+                  />
                 </div>
 
                 <div class="company">
                   <label for="company" class="space">Company</label>
-                  <input type="text" id="company" name="company"/>
+                  <input
+                    type="text"
+                    placeholder="Enter the company name..."
+                    id="company"
+                    name="company"
+                  />
                 </div>
-              </div>
 
-              <div class="grid grid-two--cols">
                 <div class="mailid">
                   <label for="mailid" class="space">Email</label>
                   <input
                     type="email"
+                    placeholder="Enter your email..."
                     id="mailid"
                     name="mailid"
                     placeholder="&#x2709;"
-                    
                   />
                 </div>
 
@@ -77,17 +107,23 @@
                   <label for="phone" class="space">Phone number</label>
                   <input
                     type="tel"
+                    placeholder="Enter your phone number..."
                     id="phone"
                     name="phone"
                     pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-                    
                   />
                 </div>
               </div>
 
               <div class="no-grid">
                 <label for="address" class="space">Address</label>
-                <input type="text" id="address" name="address" class="space"/>
+                <input
+                  type="text"
+                  placeholder="Enter your address..."
+                  id="address"
+                  name="address"
+                  class="space"
+                />
 
                 <label for="message" class="space">Your Message</label>
                 <textarea
@@ -95,9 +131,9 @@
                   name="message"
                   rows="5"
                   cols="30"
-                  
+                  placeholder="Enter Your message..."
                 ></textarea>
-                <br>
+                <br />
                 <button type="submit" class="space">Send Message</button>
               </div>
             </form>
@@ -105,5 +141,7 @@
         </div>
       </div>
     </section>
+
+    <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>

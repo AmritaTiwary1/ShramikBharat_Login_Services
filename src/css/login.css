@@ -1,0 +1,99 @@
+.box{
+    background-color: #28281c;
+    font-family: sans-serif;
+    display: flex;
+    min-height: 85.9vh;
+  }
+
+  .containers{
+    background-color: var(--text-sy-color);
+    margin:auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--text-do-color);
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-do-color);
+    font-weight: 500;
+  }
+
+  input::placeholder {
+    color: var(--text-do-color);
+    font-size: .8rem;
+    padding: .8rem;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+  input[type="submit"] {
+    background-color: var(--secondary-background-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--text-sy-color);
+    }
+  }
+
+  .social-media {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    color: var(--text-do-color);
+    
+  }
+
+  .social-media a {
+    padding: .3rem;
+    color: var(--text-do-color);
+}
+
+  .social-media a:hover {
+    color: var(--text-wh-color);
+  }
+
+  .forgot-password {
+    text-align: right;
+    margin-top: 10px;
+  }
+
+  .forgot-password a {
+    color: var(--text-wh-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+
+    &:hover {
+        color: var(--text-do-color);
+    }
+  }

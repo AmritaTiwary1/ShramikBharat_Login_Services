@@ -8,13 +8,13 @@
 }
 
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.23rem; 
     height: 100vh; 
     display: flex; 
     flex-direction: column;
     row-gap: 10px;  
-    background-color: blue;
+    background-color: var(--text-sy-color);
 }
 
 
@@ -53,6 +53,7 @@ main {
     font-size: 3rem; 
     left: 0px;  
     top:0px; 
+    color: var(--text-do-color);
 
 }
 
@@ -63,7 +64,7 @@ main {
 .signup-form-container{
     font-size: 1.3rem; 
     /* left: 0px;  */
-    background-color: rgb(242, 242, 242);
+    background-color: var(--text-sy-color);
 }
 
 /* <======= Form Styles Starts here ======> */
@@ -80,6 +81,13 @@ main {
 .signup-form-header{
     color: rgb(13, 117, 13); 
     margin-bottom: 20px; 
+    
+    & h2 {
+        & i {
+            font-size: 2rem;
+            padding: 1rem;
+        }
+    }
 }
 
 .signup-form-footer{
@@ -93,7 +101,8 @@ main {
     border: 1px solid gray; 
     border-radius: 5px;  
     cursor: pointer; 
-    background-color: rgb(12, 210, 12); 
+    background-color: var(--text-do-color); 
+    color: var(--text-sy-color);
 
     transition-property: all; 
     transition-duration: 400ms; 
@@ -101,8 +110,8 @@ main {
 }
 
 .submit-btn-container #submit:hover{
-    background-color: rgb(21, 178, 21); 
-    color: white; 
+    background-color: var(--primary-background-color); 
+    color: var(--text-do-color); 
 }
 
 .input-fields-container {
@@ -140,6 +149,11 @@ select {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    color: var(--text-do-color);
+}
+
+span {
+    padding: 2px;
 }
 
 .group-heading {
@@ -150,6 +164,24 @@ select {
 
 .input:hover{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+input::placeholder {
+    color: grey;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+input[type="file"] {
+    background-color: var(--primary-background-color);
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+label {
+    font-size: 1.2rem;
 }
 
 

@@ -60,7 +60,7 @@ const headerHTML = `  <header class="section-navbar container">
         </div>
 
         <div class="account">
-          <a class="login-btn" href="/login.html">login</a>
+          <a class="login-btn" href="/Login.html">login</a>
         <a class="register-btn" href="/register.html">register</a>
         </div>
       </div>
